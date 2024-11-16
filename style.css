@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    /* position: relative; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+
+.Weather-box {
+    height: 100%;
+    margin: 8px;
+    width: 35vw;
+    background-color: #5853E6;
+    border-radius: 30px;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+}
+
+.menu-container{
+    width: 100% ;
+    height: 100%;
+}
+
+.hidden{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#search-btn{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgb(129, 129, 200);
+    cursor: pointer;
+}
+
+#city-input{
+    border-radius: 20px;
+    padding: 1.5vh 5vw;
+    background-color: rgba(67, 169, 113, 0.352);
+    color: white;
+    font-size: 2.5vh;
+}
+
+#city-input::placeholder{
+    font-size: 14px;
+    color: rgb(206, 206, 206);
+}
+
+
+
+#location {
+    font-size: 1.2vw;
+
+}
+
+#location i {
+    font-size: 2vw;
+    margin-left: 3px;
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.weather img {
+    height: 100px;
+
+}
+
+.weather-name {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.weather-name h1 {
+    font-size: 4vw;
+    line-height: 10vh;
+}
+
+
+.parameters {
+    background-color: #453ff0;
+    height: 40vh;
+    margin-top: 3.5vh;
+    padding: 2vw;
+    width:90%;
+    margin: 13vh 2vw;
+    /* margin-top: 4vh; */
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+     gap: 80px ;
+     flex-wrap: nowrap;
+}   
+
+.para{
+    margin-bottom: 5vh;
+}
+
+.parameters h2{
+    margin-left: 1vw;
+
+}
+
+#pressure img{
+    height: 20px;
+    width: 40px;
+    color:white;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    /* justify-content: space-between; */
+}
