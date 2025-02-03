@@ -4,75 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
-    <title>Weather app</title>
+    <title>Weather App</title>
 </head>
 
 <body>
-
-    <div class="Weather-box">
+    <div class="weather-box">
         <div class="header">
             <div class="menu-container">
-                <!-- <button id="menu-icon">☰</button> -->
-                <div id="search-bar" class="hidden">
-                  <input type="text" id="city-input" placeholder="Enter city name" />
-                  <button id="search-btn" >Search</button>
+                <div id="search-bar">
+                    <input type="text" id="city-input" placeholder="Enter city name">
+                    <button id="search-btn">Search</button>
                 </div>
-              </div>
+            </div>
         </div>
 
         <div class="weather">
-            <img src="https://imgs.search.brave.com/MIjPao-iqlv8PJKq8z8f8NW4i8jWi3TD_hBy_kFNatA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG40/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvdGhlLXdlYXRo/ZXItaXMtbmljZS10/b2RheS82NC93ZWF0/aGVyXzMtMTI4LnBu/Zw"
-                alt="">
+            <img id="weather-img" src="images/default.png" 
+                alt="Weather Icon">
             <div class="weather-name">
-
-                <h1>35°c</h1>
-                <h2>Sunny</h2>
+                <h1><span id="weatherTemp">35</span>&deg;C</h1>
+                <h2 id="dayType">Sunny</h2>
             </div>
-            <!-- <div class="Aqi">
-                <h4>AQI</h4>
-                <h1>Very Poor(3/9)</h1>
-                <div class="line"></div>
-            </div> -->
         </div>
+
         <div class="parameters">
-            <div class=" upper">
+            <div class="upper">
                 <div id="uv" class="para">
                     <div class="flex">
                         <i class="ri-sun-fill"></i>
-                        <h4>UV index</h4>
+                        <h4>UV Index</h4>
                     </div>
                     <h2>Low</h2>
-                </div>  
-                <div class="para" id="humidity">
+                </div>
+                <div id="humidity" class="para">
                     <div class="flex">
                         <i class="ri-water-percent-fill"></i>
-                    <h4>Humidity</h4>
+                        <h4>Humidity</h4>
                     </div>
-                    <h2>48%</h2>
+                    <h2 id="HUM">48%</h2>
                 </div>
             </div>
 
-            <div class="lower ">
+            <div class="lower">
                 <div id="wind" class="para">
-                  <div class="flex">
-                    <i class="ri-windy-fill"></i>
-                    <h4>Wind</h4>
-                  </div>
-                    <h2><i class="ri-arrow-up-line"></i>2 km/h</h2>
+                    <div class="flex">
+                        <i class="ri-windy-fill"></i>
+                        <h4>Wind</h4>
+                    </div>
+                    <div class="flex">
+                        <i class="ri-arrow-up-line"></i>
+                        <h2 id="wind-speed">3 km/h</h2>
+                    </div>
                 </div>
                 <div id="pressure" class="para">
                     <div class="flex">
                         <i class="ri-eye-fill"></i>
                         <h4>Visibility</h4>
                     </div>
-                    <h2>2 km</h2>
+                    <h2 id="visible">2 km</h2>
                 </div>
             </div>
         </div>
-
     </div>
+
     <script src="script.js"></script>
 </body>
 
